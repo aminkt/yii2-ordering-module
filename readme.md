@@ -1,6 +1,11 @@
 How to install this module:
 
-Step1: Copy `ordering` directory in your modules folder.
+
+Step1: First clone `ordering` in your module folder
+```
+cd modules_folder
+git clone git@gitlab.com:aminkt/yii2-ordering-module.git ordering
+```
 
 Step2: Add flowing code into your `bootstrap.php` file in your project.
 ```
