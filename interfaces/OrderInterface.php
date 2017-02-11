@@ -117,6 +117,35 @@ interface OrderInterface
     public function addItem($config=[]);
 
 
+    /**
+     *
+     * @param array $config Config data should be like this:
+     *
+     * [
+     *
+     *     'product'=>$product (productInterface),
+     *
+     *     'qty'=>5 (optional. default is 1)
+     *
+     * ]
+     *
+     * or be like this:
+     *
+     * [
+     *
+     *     'productId'=>5 (integer),
+     *
+     *     'orderId'=>5 (integer),
+     *
+     *     'qty'=>5 (optional. default is 1)
+     *
+     * ]
+     * Remove one item from order items.
+     * @return OrderItemInterface
+     */
+    public function removeItem($config=[]);
+
+
 
     /**
      * @return int
