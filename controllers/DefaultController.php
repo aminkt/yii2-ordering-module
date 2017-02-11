@@ -6,6 +6,7 @@ use ordering\interfaces\CustomerProfileInterface;
 use ordering\interfaces\OrderInterface;
 use ordering\Order;
 use yii\data\ActiveDataProvider;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\web\ServerErrorHttpException;
@@ -15,6 +16,25 @@ use yii\web\ServerErrorHttpException;
  */
 class DefaultController extends Controller
 {
+    /**
+     * @inheritdoc
+     */
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+        ];
+    }
+
+
     /** @var  Order $module */
     public $module;
 
