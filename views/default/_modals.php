@@ -4,7 +4,7 @@ use yii\bootstrap\Modal;
 
 /* @var $this yii\web\View */
 
-$loadingImage = '../img/loading-spinner-grey.gif';
+$loadingImage = '../images/loading-spinner-grey.gif';
 $loading = <<<HTML
 <div class="data-loader hidden"><img src="$loadingImage"> &nbsp; &nbsp; درحال بارگزاری ...</div>
 HTML;
