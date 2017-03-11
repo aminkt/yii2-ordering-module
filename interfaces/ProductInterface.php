@@ -50,4 +50,10 @@ interface ProductInterface
      */
     public function incrementOrderNum();
 
+    /**
+     * Increment visit num counter.
+     * @return void
+     */
+    public function incrementVisitNum();
+
 }
