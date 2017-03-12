@@ -15,6 +15,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php \yii\widgets\Pjax::begin(); ?>
     <?= \yii\grid\GridView::widget([
         'dataProvider' => $dataProvider,
+        'options'=>[
+            'class'=>'table-responsive'
+        ],
         //'filterModel'=>$searchModel,
         'columns'=>[
             [

@@ -14,6 +14,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= \yii\grid\GridView::widget([
         'dataProvider' => $dataProvider,
+        'options'=>[
+            'class'=>'table-responsive'
+        ],
         //'filterModel'=>$searchModel,
         'columns'=>[
             [
