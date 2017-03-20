@@ -1,13 +1,10 @@
 {
-    // package name
     "name": "aminkt/yii2-ordering-module",
-
-    // package type
     "type": "yii2-extension",
-
     "description": "Yii2 ordering module for shopping sites",
     "keywords": ["yii2", "order", "ordering", "module"],
     "license": "BSD-3-Clause",
+    "homepage": "https://gitlab.com/aminkt/yii2-ordering-module",
     "support": {
         "issues": "https://gitlab.com/aminkt/yii2-ordering-module/issues",
         "site": "https://telbit.ir",
@@ -19,16 +16,22 @@
             "email": "ak_1596@yahoo.com"
         }
     ],
-
-    // package dependencies
     "require": {
         "yiisoft/yii2": "~2.0.0"
     },
-
-    // class autoloading specs
     "autoload": {
         "psr-4": {
-            "aminkt\\ordering\\": "ordering"
+            "aminkt\\ordering\\": ""
         }
-    }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "master"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

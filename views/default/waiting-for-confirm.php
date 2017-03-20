@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute'=>'customerId',
                 'format'=>'raw',
                 'value'=>function ($model){
-                    /** @var $model \ordering\interfaces\OrderInterface */
+                    /** @var $model \aminkt\ordering\interfaces\OrderInterface */
                     $customer = $model->getCustomer();
                     if($customer){
                         $name = $customer->getCustomerName().' '.$customer->getCustomerFamily();
@@ -61,7 +61,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     'style'=>'width:10%;',
                 ],
                 'value'=>function ($model){
-                    /** @var $model \ordering\interfaces\OrderInterface */
+                    /** @var $model \aminkt\ordering\interfaces\OrderInterface */
                     if($model->getPayStatus() == $model::PAY_STATUS_NOT_PAID)
                         return "پرداخت نشده";
                     elseif($model->getPayStatus() == $model::PAY_STATUS_PAID)
@@ -76,7 +76,7 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'attribute'=>'status',
                 'value'=>function ($model){
-                    /** @var $model \ordering\interfaces\OrderInterface */
+                    /** @var $model \aminkt\ordering\interfaces\OrderInterface */
                     if($model->getStatus() == $model::STATUS_SHOP_CART)
                         return "در سبد خرید";
                     elseif($model->getStatus() == $model::STATUS_WAITING_FOR_CONFIRM)
@@ -106,7 +106,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     'style'=>'width:12%;',
                 ],
                 'value'=>function ($model){
-                    /** @var $model \ordering\interfaces\OrderInterface */
+                    /** @var $model \aminkt\ordering\interfaces\OrderInterface */
                     return $model->getChangeStatusTime();
                 }
             ],
@@ -116,7 +116,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     'style'=>'width:12%;',
                 ],
                 'value'=>function ($model){
-                    /** @var $model \ordering\interfaces\OrderInterface */
+                    /** @var $model \aminkt\ordering\interfaces\OrderInterface */
                     return $model->getCreateTime();
                 }
             ],
@@ -128,7 +128,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     'class'=>'text-center'
                 ],
                 'value' => function ($model) {
-                    /** @var \ordering\interfaces\OrderInterface $model */
+                    /** @var \aminkt\ordering\interfaces\OrderInterface $model */
                     $html = '<div style="text-align: center;"> <div class="btn-group">';
                     $html .= Html::a('<i class="fa fa-eye"></i>', '#', [
                         'class'=>'btn btn-icon-only blue show-modal tooltips',

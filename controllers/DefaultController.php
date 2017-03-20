@@ -1,10 +1,10 @@
 <?php
 
-namespace ordering\controllers;
+namespace aminkt\ordering\controllers;
 
-use ordering\interfaces\CustomerProfileInterface;
-use ordering\interfaces\OrderInterface;
-use ordering\Order;
+use aminkt\ordering\interfaces\CustomerProfileInterface;
+use aminkt\ordering\interfaces\OrderInterface;
+use aminkt\ordering\Order;
 use yii\data\ActiveDataProvider;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -332,7 +332,7 @@ class DefaultController extends Controller
      */
     public function actionChangeStatus($id, $do){
 
-        /** @var \ordering\components\Order $orderComponent */
+        /** @var \aminkt\ordering\components\Order $orderComponent */
         $orderComponent = \Yii::$app->order;
         if(!$orderComponent->changeOrderStatus($id, $do)){
             throw new ServerErrorHttpException('وضعیت سفارش تغییر نکرد.');

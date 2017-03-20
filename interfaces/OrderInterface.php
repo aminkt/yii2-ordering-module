@@ -1,5 +1,5 @@
 <?php
-namespace ordering\interfaces;
+namespace aminkt\ordering\interfaces;
 
 use yii\db\ActiveQueryInterface;
 

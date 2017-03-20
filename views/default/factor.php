@@ -1,6 +1,6 @@
 <?php
 /* @var $this yii\web\View */
-/* @var $model \ordering\interfaces\OrderInterface */
+/* @var $model \aminkt\aminkt\ordering\interfaces\OrderInterface */
 
 $this->title='فاکتور فروش';
 $this->params['breadcrumbs'][] = ['label' => 'سفارشات', 'url' => ['index']];
@@ -245,14 +245,14 @@ for ($j=0; $j<$totalItems; $j+=$pageSize):
                     <!--                    <th>جمع مبلغ کل پس از تخفیف و مالیات و عوارض (ریال)</th>-->
                 </tr>
                 <?php
-                /* @var $item \ordering\interfaces\OrderItemInterface */
+                /* @var $item \aminkt\ordering\interfaces\OrderItemInterface */
                 $i=0;
                 $totalPage = 0 ;
                 $totalPageNum = 0;
                 while($counter<=$totalItems and $i<$pageSize) :
                     $i++;
                     $item = $items[$counter-1];
-                    /* @var $product \ordering\interfaces\ProductInterface */
+                    /* @var $product \aminkt\ordering\interfaces\ProductInterface */
                     $totalPage += max(0, ($item->getPrice()-$item->getDiscount()))*$item->getNumber();
                     $totalPageNum += $item->getNumber();
                     $product = $item->getProduct();

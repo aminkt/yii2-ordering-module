@@ -1,10 +1,10 @@
 <?php
 
-namespace ordering;
-use ordering\interfaces\CustomerProfileInterface;
-use ordering\interfaces\OrderInterface;
-use ordering\interfaces\OrderItemInterface;
-use ordering\interfaces\ProductInterface;
+namespace aminkt\ordering;
+use aminkt\ordering\interfaces\CustomerProfileInterface;
+use aminkt\ordering\interfaces\OrderInterface;
+use aminkt\ordering\interfaces\OrderItemInterface;
+use aminkt\ordering\interfaces\ProductInterface;
 
 /**
  * ordering module definition class
@@ -24,6 +24,6 @@ class Order extends \yii\base\Module
     /**
      * @inheritdoc
      */
-    public $controllerNamespace = 'ordering\controllers';
+    public $controllerNamespace = 'aminkt\ordering\controllers';
 
 }

@@ -1,6 +1,6 @@
 <?php
 /* @var $this yii\web\View */
-/* @var $model \ordering\interfaces\OrderInterface */
+/* @var $model \aminkt\ordering\interfaces\OrderInterface */
 ?>
 
 <div class="row static-info">

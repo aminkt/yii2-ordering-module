@@ -1,8 +1,8 @@
 <?php
-namespace ordering\components;
+namespace aminkt\ordering\components;
 
-use ordering\interfaces\OrderInterface;
-use ordering\interfaces\OrderItemInterface;
+use aminkt\ordering\interfaces\OrderInterface;
+use aminkt\ordering\interfaces\OrderItemInterface;
 use yii\base\Component;
 
 class Order extends Component{

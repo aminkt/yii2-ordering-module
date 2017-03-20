@@ -1,6 +1,6 @@
 <?php
 /* @var $this yii\web\View */
-/* @var $order \ordering\interfaces\OrderInterface */
+/* @var $order \aminkt\ordering\interfaces\OrderInterface */
 /* @var $page string */
 
 $items = $order->getItems();

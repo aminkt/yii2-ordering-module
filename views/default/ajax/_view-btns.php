@@ -1,9 +1,9 @@
 <?php
-use ordering\interfaces\OrderInterface;
+use aminkt\ordering\interfaces\OrderInterface;
 use yii\helpers\Url;
 
 /* @var $this yii\web\View */
-/* @var $order \ordering\interfaces\OrderInterface */
+/* @var $order \aminkt\ordering\interfaces\OrderInterface */
 /* @var $page string */
 ?>
     <div class="col-md-12" style="text-align: left">
