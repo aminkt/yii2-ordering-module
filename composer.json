@@ -1,8 +1,6 @@
 {
-    // package name
     "name": "aminkt/yii2-ordering-module",
 
-    // package type
     "type": "yii2-extension",
 
     "description": "Yii2 ordering module for shopping sites",
@@ -20,12 +18,10 @@
         }
     ],
 
-    // package dependencies
     "require": {
         "yiisoft/yii2": "~2.0.0"
     },
 
-    // class autoloading specs
     "autoload": {
         "psr-4": {
             "aminkt\\ordering\\": "ordering"
