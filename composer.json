@@ -3,7 +3,7 @@
     "type": "yii2-extension",
     "description": "Yii2 ordering module for shopping sites",
     "keywords": ["yii2", "order", "ordering", "module"],
-    "license": "BSD-3-Clause",
+    "license": "All right reserved",
     "homepage": "https://gitlab.com/aminkt/yii2-ordering-module",
     "support": {
         "issues": "https://gitlab.com/aminkt/yii2-ordering-module/issues",
