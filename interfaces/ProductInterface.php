@@ -28,9 +28,11 @@ interface ProductInterface
 
     /**
      * Return main picture address.
+     * @param null|string $size Picture size
+     * @param bool $path Return address as path or url
      * @return string
      */
-    public function getMainPicture();
+    public function getMainPicture($size=null, $path=false);
 
     /**
      * Return product price
