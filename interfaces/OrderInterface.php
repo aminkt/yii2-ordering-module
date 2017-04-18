@@ -199,6 +199,13 @@ interface OrderInterface
     public function getPayType();
 
     /**
+     * Set payment type of order.
+     * @param string $payType
+     * @return void
+     */
+    public function setPayType($payType);
+
+    /**
      * @return int
      */
     public function getPayStatus();

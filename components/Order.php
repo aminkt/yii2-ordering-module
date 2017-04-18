@@ -13,6 +13,17 @@ class Order extends Component{
 
 
     /**
+     * Return order model directly.
+     * @param string $orderId
+     *
+     * @return OrderInterface
+     */
+    public function getOrder($orderId){
+        $orderModel = $this->orderModel;
+        return $orderModel::getOrder($orderId);
+    }
+
+    /**
      * @param array $config Config data should be like this:
      *
      * [
