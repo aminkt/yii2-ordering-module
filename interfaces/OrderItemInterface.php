@@ -47,6 +47,7 @@ interface OrderItemInterface
     public function getProductId();
 
     /**
+     * Return unit price
      * @return float
      */
     public function getPrice();
@@ -62,6 +63,7 @@ interface OrderItemInterface
     public function getNumber();
 
     /**
+     * Return total price
      * @return float
      */
     public function getTotalPrice();

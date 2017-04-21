@@ -50,6 +50,13 @@ interface OrderInterface
      */
     public static function getOrder($orderId);
 
+    /**
+     * Use order tracking code to get order
+     * @param string $trackingCode
+     * @return OrderInterface
+     */
+    public static function getOrderByTrackingCode($trackingCode);
+
 
     /**
      * Return an active query of order model.

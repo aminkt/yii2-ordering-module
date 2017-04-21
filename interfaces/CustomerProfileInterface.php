@@ -24,6 +24,12 @@ interface CustomerProfileInterface
     public function getId();
 
     /**
+     * Return customer user name
+     * @return string
+     */
+    public function getCustomerUsername();
+
+    /**
      * Return customer profile name
      * @return string
      */
@@ -52,5 +58,12 @@ interface CustomerProfileInterface
      * @return string
      */
     public function getCustomerAddress();
+
+    /**
+     * Set new address for user.
+     * @param $address
+     * @return void
+     */
+    public function setCustomerAddress($address);
 
 }
