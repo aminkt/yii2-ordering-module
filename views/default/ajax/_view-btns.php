@@ -1,4 +1,5 @@
 <?php
+
 use aminkt\ordering\interfaces\OrderInterface;
 use yii\helpers\Url;
 
@@ -38,9 +39,9 @@ use yii\helpers\Url;
 
         <?php elseif ($order->getStatus() == OrderInterface::STATUS_CANCELLED) : ?>
 
-            <a href="<?= Url::to(['factor', 'id' => $order->getId(), 'page'=>$page]) ?>"
-               class="btn btn-default btn-sm green">
-                <i class="fa fa-factor"></i> پرینت فاکتور سفارش </a>
+            <!--            <a href="--><? //= Url::to(['factor', 'id' => $order->getId(), 'page'=>$page]) ?><!--"-->
+            <!--               class="btn btn-default btn-sm green">-->
+            <!--                <i class="fa fa-factor"></i> پرینت فاکتور سفارش </a>-->
 
         <?php elseif ($order->getStatus() == OrderInterface::STATUS_CONFIRMED) : ?>
             <a href="<?= Url::to(['change-status', 'id' => $order->getId(), 'page'=>$page, 'do' => $order::STATUS_READY_TO_SEND]) ?>"
@@ -83,9 +84,13 @@ use yii\helpers\Url;
 
         <?php elseif ($order->getStatus() == OrderInterface::STATUS_RECEIVED) : ?>
 
-            <a href="<?= Url::to(['factor', 'id' => $order->getId(), 'page'=>$page]) ?>"
-               class="btn btn-default btn-sm green">
-                <i class="fa fa-factor"></i> پرینت فاکتور سفارش </a>
+            <!--            <a href="--><? //= Url::to(['factor', 'id' => $order->getId(), 'page'=>$page]) ?><!--"-->
+            <!--               class="btn btn-default btn-sm green">-->
+            <!--                <i class="fa fa-factor"></i> پرینت فاکتور سفارش </a>-->
 
         <?php endif; ?>
+
+        <a href="<?= Url::to(['factor', 'id' => $order->getId(), 'page' => $page]) ?>"
+           class="btn btn-default btn-sm green">
+            <i class="fa fa-factor"></i> پرینت فاکتور سفارش </a>
     </div>
