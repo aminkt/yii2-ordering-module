@@ -23,15 +23,5 @@
         "psr-4": {
             "aminkt\\ordering\\": ""
         }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "master"
-        }
-    },
-    "config": {
-        "preferred-install": "dist"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
