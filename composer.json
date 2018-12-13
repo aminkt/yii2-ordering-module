@@ -4,11 +4,10 @@
     "description": "Yii2 ordering module for shopping sites",
     "keywords": ["yii2", "order", "ordering", "module"],
     "license": "GPL-3.0",
-    "homepage": "https://gitlab.com/aminkt/yii2-ordering-module",
+    "homepage": "https://github.com/aminkt/yii2-ordering-module",
     "support": {
-        "issues": "https://gitlab.com/aminkt/yii2-ordering-module/issues",
-        "site": "https://telbit.ir",
-        "source": "https://gitlab.com/aminkt/yii2-ordering-module/issues"
+        "issues": "https://github.com/aminkt/yii2-ordering-module/issues",\
+        "source": "https://github.com/aminkt/yii2-ordering-module/issues"
     },
     "authors": [
         {
