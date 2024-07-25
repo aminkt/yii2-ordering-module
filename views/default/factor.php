@@ -5,7 +5,7 @@
 $this->title='فاکتور فروش';
 $this->params['breadcrumbs'][] = ['label' => 'سفارشات', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
-$this->registerCssFile('@web/../assets/template/pages/css/invoice-rtl.min.css');
+$this->registerCssFile(\common\config\AppConfig::getCdnBaseUrl() .'/assets/template/pages/css/invoice-rtl.min.css');
 $customer = $model->getCustomer();
 $items = $model->getItems();
 ?>
@@ -131,15 +131,16 @@ $items = $model->getItems();
     </div>
 </div> */ ?>
 <!-- END PAGE BASE CONTENT -->
-    <script src="../assets/template/barcode/barcode.js"></script>
-    <script src="../assets/template/barcode/code128auto.js"></script>
-    <script src="../assets/template/barcode/app-code128auto.js"></script>
-    <link href="../assets/template/factor.css" rel="stylesheet" type="text/css">
+    <script src="<?= \common\config\AppConfig::getCdnBaseUrl() ?>/assets/template/barcode/barcode.js"></script>
+    <script src="<?= \common\config\AppConfig::getCdnBaseUrl() ?>/assets/template/barcode/code128auto.js"></script>
+    <script src="<?= \common\config\AppConfig::getCdnBaseUrl() ?>/assets/template/barcode/app-code128auto.js"></script>
+    <link href="<?= \common\config\AppConfig::getCdnBaseUrl() ?>/assets/template/factor.css" rel="stylesheet" type="text/css">
     <style type="text/css" media="screen,print">
         @font-face {
             font-family: WebCode128;
-            src: url("../assets/template/barcode/WebCode128H3.eot");
-            src: url("../assets/template/barcode/WebCode128H3.otf") format("opentype"), url("barcode/WebCode128H3.woff") format("woff");
+            src: url("<?= \common\config\AppConfig::getCdnBaseUrl() ?>/assets/template/barcode/WebCode128H3.eot");
+            src: url("<?= \common\config\AppConfig::getCdnBaseUrl() ?>/assets/template/barcode/WebCode128H3.otf") format("opentype"), url("barcode/WebCode128H3.woff") format("woff");
+            src: url("<?= \common\config\AppConfig::getCdnBaseUrl() ?>/assets/template/barcode/WebCode128H3.woff") format("opentype"), url("barcode/WebCode128H3.woff") format("woff");
         }
 
         div.barcodeVal {
