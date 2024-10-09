@@ -84,32 +84,24 @@ class Order extends Component{
     /**
      *
      * @param array $config Config data should be like this:
-     *
+     * <code>
      * [
-     *
-     *     'product'=>$product (productInterface),
-     *
+     *    'product'=>$product (productInterface),
      *    'orderId'=>5 (integer),
-     *
-     *     'qty'=>5 (optional. default is 1)
-     *
+     *    'qty'=>5 (optional. default is 1)
      * ]
-     *
-     * or be like this:
-     *
+     * // or be like this:
      * [
-     *
      *     'productId'=>5 (integer),
-     *
      *     'orderId'=>5 (integer),
-     *
      *     'qty'=>5 (optional. default is 1)
-     *
      * ]
+     *  </code>
+     *
      * Remove one item from order items.
      * @return OrderItemInterface
      */
-    public function removeItem($config=[]){
+    public function removeItem(array $config=[]){
         $orderModel = $this->orderModel;
         /** @var OrderInterface $order */
 
