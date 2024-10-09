@@ -61,21 +61,20 @@ class Order extends Component{
         $orderModel = $this->orderModel;
         /** @var OrderInterface $order */
 
-        if(isset($config['orderId'])){
-            $orderId = $config['orderId'];
-            $order = $orderModel::getOrder($orderId);
-        }
-        else
-            $order = null;
+        $botId = $config['botId'] ?? throw new \InvalidArgumentException("botId is not exist in bot config.");
+        $order = ($orderId = $config['orderId'] ?? null) ? $orderModel::getOrder($orderId) : null;
 
         if(!$order){
-            if(isset($config['customer'])){
-                if(isset($config['customerNote']))
-                    $order = $orderModel::createNewOrder($config['customer'], $config['customerNote']);
-                else
-                    $order = $orderModel::createNewOrder($config['customer']);
-            }else
-                $order = $orderModel::createNewOrder();
+            $customerNote = $config['customerNote'] ?? null;
+            $customer = $config['customer'] ?? null;
+
+            if ($customer && $customerNote) {
+                $order = $orderModel::createNewOrder($customer, $botId, $customerNote);
+            } else if ($customer) {
+                $order = $orderModel::createNewOrder($customer, $botId);
+            } else {
+                throw new \RuntimeException("Can not create order, Customer dose not exist..");
+            }
         }
 
         return $order->addItem($config);

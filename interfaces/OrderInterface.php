@@ -71,7 +71,7 @@ interface OrderInterface
      * @param $note string
      * @return OrderInterface
      */
-    public static function createNewOrder($customer=null, $note=null);
+    public static function createNewOrder(CustomerProfileInterface $customer=null, int $botId = null, ?string $note=null): OrderInterface;
 
     /**
      * Return Customer
