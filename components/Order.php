@@ -5,6 +5,9 @@ use aminkt\ordering\interfaces\OrderInterface;
 use aminkt\ordering\interfaces\OrderItemInterface;
 use yii\base\Component;
 
+/**
+ * @deprecated
+ */
 class Order extends Component{
     /** @var  OrderInterface $orderModel */
     public $orderModel;
