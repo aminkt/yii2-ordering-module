@@ -42,7 +42,7 @@ $items = $model->getItems();
             </ul>
         </div>
         <div class="col-xs-4 invoice-payment">
-            <h3>Payment Details:</h3>
+            <h3>PaymentProvider Details:</h3>
             <ul class="list-unstyled">
                 <li>
                     <strong>V.A.T Reg #:</strong> 542554(DEMO)78 </li>
