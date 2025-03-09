@@ -1,10 +1,11 @@
 <?php
 
+use common\config\AppConfig;
 use yii\bootstrap\Modal;
 
 /* @var $this yii\web\View */
 
-$loadingImage = '../images/loading-spinner-grey.gif';
+$loadingImage = AppConfig::getCdnBaseUrl() .'/assets/images/loading-spinner-grey.gif';
 $loading = <<<HTML
 <div class="data-loader hidden"><img src="$loadingImage"> &nbsp; &nbsp; درحال بارگزاری ...</div>
 HTML;
