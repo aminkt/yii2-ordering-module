@@ -1,6 +1,6 @@
 <?php
 
-use common\config\AppConfig;
+use Telbit\Presentation\AppConfig;
 use yii\bootstrap\Modal;
 
 /* @var $this yii\web\View */
